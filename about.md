@@ -71,13 +71,13 @@ I am a finance professional with over 8 years of experience in accounting, contr
 ## Education
 
 ### Master's Degree in Business Intelligence
-**UNIR - Universidad Internacional de La Rioja** | *2025*
+**UNIR - Universidad Internacional de La Rioja** | *2024-2025*
 
 ### Master's Degree in Finance
-**ESIC Escuela de Negocios** | *2021*
+**ESIC Escuela de Negocios** | *2020-2021*
 
 ### Bachelor's Degree in Business Administration
-**UPV - EHU** | *2018*
+**UPV - EHU** | *2014-2018*
 
 ---
 
