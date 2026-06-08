@@ -93,11 +93,6 @@ IF(
 
 ## Business Insights
 
-### Key Findings
-
-```markdown
-## Business Insights
-
 - United States generated approximately one-third of total sales and remained the company's strongest market.
 - Australia represented the second largest contributor, consolidating more than 25% of revenue.
 - Road Bikes accounted for over 50% of total sales volume.
