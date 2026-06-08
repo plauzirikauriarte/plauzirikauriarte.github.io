@@ -22,15 +22,6 @@ A comprehensive business intelligence dashboard designed to provide real-time in
 
 ---
 
-## Project Objectives
-
-- 📊 **Real-time Sales Monitoring:** Track sales metrics and KPIs in real-time
-- 🎯 **Performance Analysis:** Analyze sales performance by region, product, and customer
-- 📈 **Trend Identification:** Identify sales trends and seasonal patterns
-- 💡 **Business Insights:** Provide actionable insights for strategic decision-making
-- 🔍 **Interactive Exploration:** Allow stakeholders to drill down and explore data
-
----
 
 ## Data Model
 
