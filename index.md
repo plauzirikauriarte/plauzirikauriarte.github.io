@@ -4,13 +4,26 @@ title: Finance & Business Intelligence Portfolio
 ---
 
 <section class="intro-section">
-    <h1>Portfolio</h1>
-    <p class="subtitle">Finance & Business Intelligence Professional</p>
-    <p>
-        Transforming complex financial data into actionable business insights. 
-        Specialized in Business Intelligence, data analytics, and financial reporting using 
-        modern tools like Power BI, SQL, and Python.
-    </p>
+
+<div style="display:flex; align-items:center; gap:30px; flex-wrap:wrap;">
+
+    <img src="/portfolioassets/image_profile.jpg"
+         alt="Patrik Lauzirika"
+         width="180"
+         style="border-radius:50%; border:4px solid #e5e7eb;">
+
+    <div>
+        <h1>Patrik Lauzirika Uriarte</h1>
+        <p class="subtitle">Finance & Business Intelligence Professional</p>
+        <p>
+            Transforming complex financial data into actionable business insights.
+            Specialized in Business Intelligence, data analytics and financial
+            reporting using modern tools like Power BI, SQL and Python.
+        </p>
+    </div>
+
+</div>
+
 </section>
 
 <section class="button-grid">
