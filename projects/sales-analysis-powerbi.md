@@ -48,7 +48,7 @@ A comprehensive business intelligence dashboard designed to provide real-time in
 
 ### Sales Overview
 
-<img src="/projects/salesanalysisassets/aw-sales-1.png"
+<img src="/projects/salesanalysisassets/aw - sales 1.png"
      alt="Adventure Works Sales Dashboard"
      width="900">
 
@@ -58,7 +58,7 @@ This page provides an overview of sales, costs, margin and order volume, allowin
 
 ### Sales Overview - year 2013 selected to get YoY comparisons
 
-<img src="/projects/salesanalysisassets/aw-sales-2.png"
+<img src="/projects/salesanalysisassets/aw - sales 2.png"
      alt="Adventure Works Product Analysis"
      width="900">
 
