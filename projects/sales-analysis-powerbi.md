@@ -41,84 +41,31 @@ A comprehensive business intelligence dashboard designed to provide real-time in
      alt="Star Schema Data Model"
      width="900">
 
----
-
-## Technologies Used
-
-### BI & Visualization
-- **Power BI Desktop** - Dashboard development
-- **Power Query** - Data transformation
-- **DAX (Data Analysis Expressions)** - Calculations and measures
-
-### Data
-- **AdventureWorks Sample Database** - OLTP dataset
-- **Fact & Dimension Tables** - Star schema design
-- **Date Dimension** - Time intelligence
-
 
 ---
 
-## Dashboard Features
+## Sample Screenshots
 
-### 1. Executive Summary
-- High-level KPIs (Total Sales, Orders, Customers)
-- Year-to-Date metrics with targets
-- Sales trend visualization
-- Regional performance overview
+### Sales Overview
 
-### 2. Sales Analysis
-- Sales by product category
-- Sales by territory/region
-- Sales by customer segment
-- Top 10 products performance
-- Sales trend over time
-
-### 3. Regional Performance
-- Sales by territory heatmap
-- Regional comparison metrics
-- Territory-level drill-down capability
-- Regional growth trends
-
-### 4. Product Analytics
-- Product category performance
-- Best-selling products
-- Product profitability
-- Product trend analysis
-- Inventory insights
-
-### 5. Interactive Filters
-- Date range selector
-- Territory/Region filter
-- Product category filter
-- Customer segment filter
-- Year/Month/Quarter selection
-
----
-
-## Screenshots
-
-<img src="/projects/salesanalysisassets/sales-summary.png"
-     alt="Sales Summary"
+<img src="/projects/salesanalysisassets/aw-sales-1.png"
+     alt="Adventure Works Sales Dashboard"
      width="900">
 
-```
-[Screenshot 1: Sales Summary]
-KPIs displayed at the top with key metrics
-```
+This page provides an overview of sales, costs, margin and order volume, allowing users to analyze performance by country, quarter and product family.
+
+---
+
+### Sales Overview - year 2013 selected to get YoY comparisons
+
+<img src="/projects/salesanalysisassets/aw-sales-2.png"
+     alt="Adventure Works Product Analysis"
+     width="900">
 
 ---
 
 
-## DAX Formulas
-
-### Measure: Total Sales
-
-```dax
-TotalSales = SUMX(
-    FactSales,
-    FactSales[Quantity] * FactSales[UnitPrice]
-)
-```
+## Salmple DAX Formulas
 
 ### Measure: Sales YoY Growth
 
@@ -131,26 +78,15 @@ RETURN
     )
 ```
 
-### Measure: Average Order Value
+### Measure: Total Sales
 
 ```dax
-AvgOrderValue = DIVIDE(
-    [TotalSales],
-    DISTINCTCOUNT(FactSales[OrderID]),
-    0
+Sales Amount YoY % = 
+IF(
+    HASONEVALUE(DimDates[CalendarYear]),
+    DIVIDE([Ventas totales] - [Sales Amount LY], [Sales Amount LY]),
+    BLANK()
 )
-```
-
-### Measure: Month-over-Month Growth
-
-```dax
-MoMGrowth = VAR CurrentMonth = [TotalSales]
-    VAR PreviousMonth = CALCULATE(
-        [TotalSales],
-        DATEADD(DimDate[Date], -1, MONTH)
-    )
-RETURN
-    DIVIDE(CurrentMonth - PreviousMonth, PreviousMonth, 0)
 ```
 
 ---
@@ -159,26 +95,14 @@ RETURN
 
 ### Key Findings
 
-1. **Sales Concentration**
-   - Top 20% of products generate 80% of revenue
-   - Regional variations in product preferences
-   - Seasonal patterns observed in Q4
+```markdown
+## Business Insights
 
-2. **Customer Behavior**
-   - Average customer lifetime value: [Value]
-   - Repeat purchase rate: [%]
-   - Customer acquisition cost: [Value]
-
-3. **Growth Opportunities**
-   - Emerging product categories showing growth
-   - Underperforming regions with potential
-   - Cross-selling opportunities identified
-
-4. **Performance Metrics**
-   - Quarter-over-quarter growth: [%]
-   - Customer satisfaction metrics: [Value]
-   - Order fulfillment rate: [%]
-
+- United States generated approximately one-third of total sales and remained the company's strongest market.
+- Australia represented the second largest contributor, consolidating more than 25% of revenue.
+- Road Bikes accounted for over 50% of total sales volume.
+- Touring products experienced significant growth during the final periods analysed.
+- Sales showed a positive trend throughout the year, reaching the highest level in the last quarter.
 
 ---
 
