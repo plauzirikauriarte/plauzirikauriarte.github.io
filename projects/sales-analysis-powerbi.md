@@ -65,7 +65,7 @@ This page provides an overview of sales, costs, margin and order volume, allowin
 ---
 
 
-## Salmple DAX Formulas
+## Sample DAX Formulas
 
 ### Measure: Sales YoY Growth
 
