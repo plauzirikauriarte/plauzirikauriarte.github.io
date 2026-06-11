@@ -20,18 +20,16 @@ A collection of my Finance & Business Intelligence projects showcasing expertise
     </div>
   </a>
 
-  <!-- Project Card 2 (Template - Uncomment when ready) -->
-  <!-- 
-  <a href="/projects/your-project-slug/" class="project-card">
+  <!-- Project Card 2 -->
+  <a href="/projects/cash-forecast/" class="project-card">
     <div class="project-card-content">
-      <div class="project-icon">🔄</div>
-      <h3>Your Project Title</h3>
-      <p class="project-category">Technology • Stack</p>
-      <p class="project-description">Brief description of your project goes here.</p>
+      <div class="project-icon">💰</div>
+      <h3>Cash Forecast</h3>
+      <p class="project-category">Financial Modeling • Python • Data Analytics</p>
+      <p class="project-description">Comprehensive cash forecasting tool for financial planning and projection analysis.</p>
       <span class="learn-more">View Project →</span>
     </div>
   </a>
-  -->
 
   <!-- Project Card 3 (Template - Uncomment when ready) -->
   <!-- 
