@@ -108,10 +108,6 @@ IF(
 
 ---
 
-## Related Projects
-
----
-
 <div class="project-navigation">
   <a href="/projects/" class="back-link">← Back to All Projects</a>
   <a href="/contact/" class="contact-link">Have questions? Contact me →</a>
