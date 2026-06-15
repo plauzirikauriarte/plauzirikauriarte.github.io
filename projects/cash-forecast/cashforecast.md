@@ -36,6 +36,14 @@ The project implements a classic BI architectural workflow: **Extract ➔ Transf
 
 > 💡 **Future Automation Roadmap:** As a scalable next step, the manual Excel/CSV extractions from the ERP will be replaced by a direct pipeline via SQL database connections or API integrations, eliminating manual file downloads completely.
 
+### Data Model Structure
+
+<img src="/projects/cash-forecast/Cash forecast PLU - data model.png" 
+     alt="Filtered Client Analysis" 
+     width="900">
+
+The relational data model implemented in Power Pivot, structured around a tailored Star Schema. At its core, a dynamic 30-day forecast table acts as the primary calendar dimension, bridging the gap between current bank ledger data, auxiliary data tables, and future cash flow projections (Accounts Receivable and Accounts Payable fact tables). A dedicated measures table centralizes all financial DAX logic.
+
 ---
 
 ## Sample Screenshots
