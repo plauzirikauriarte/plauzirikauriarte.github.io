@@ -85,10 +85,75 @@ This filters inmediately make changes in the main table on the left by just show
 
 ---
 
-## Sample DAX Formulas & Financial Logic
+## Sample DAX Formulas & Advanced Calculations
 
-### Prevent Non-All Slicer Distortion (Data Integrity)
-To prevent management from making decisions based on unrealistic bank data when filtering specific clients, a custom logic block was built into the starting and ending balance cells:
+The project centralizes its financial logic inside a unified Measures repository. Below are the 5 most advanced DAX calculations developed to handle cash accumulation, dynamic ledger balancing, and temporal horizons.
 
-```excel
-=SI(O(Análisis!$AF$1<>"All";Análisis!$AJ$1<>"All");"";Análisis!H3)
+### 1. Dynamic Daily Cash Position (Ending Balance)
+This measure calculates the actual cash available at the end of any given day. It takes the initial bank balance and adds the cumulative net flow (collections minus payments) up to that specific point in time.
+
+```dax
+Saldo final = 
+VAR MaxFecha = MAX('Calendario prox 30 días'[Date])
+RETURN
+    [Saldo inicial prev] + 
+    CALCULATE(
+        [Flujo Neto],
+        FILTER(
+            ALL('Calendario prox 30 días'),
+            'Calendario prox 30 días'[Date] <= MaxFecha
+        )
+    )
+```
+
+### 2. Rolling Cumulative Net Cash Flow
+To plot the liquidity runway graph without time-gap distortions, this measure calculates the running total of the net cash flow. It explicitly evaluates the data state across the custom calendar dimension.
+
+```dax
+Flujo Neto Acum = 
+VAR MaxFecha = MAX('Calendario prox 30 días'[Date])
+RETURN
+    CALCULATE(
+        [Flujo Neto],
+        FILTER(
+            ALLSELECTED('Calendario prox 30 días'),
+            'Calendario prox 30 días'[Date] <= MaxFecha
+        )
+    )
+```
+
+### 3. Smart Extraction of Current Bank Ledger
+This measure extracts the baseline cash status from the bank statement table. It isolates the last known balance entry before the forecasting timeline begins, ensuring the projection starts from a verified mathematical real-world figure.
+
+```dax
+Saldo inicial prev = 
+CALCULATE(
+    SUM('PLU - saldos bancarios'[Saldo]),
+    LASTDATE('PLU - saldos bancarios'[Fecha])
+)
+```
+
+### 4. Dynamic Time Horizon Classification (Ageing Categorization)
+This calculated column logic shifts transactions dynamically into operational windows (Overdue, Next 7 Days, Horizon). It enables the dashboard's semantic semaphores to switch states automatically based on the current date execution.
+
+```dax
+atrasados/próximos/posteriores = 
+VAR FechaVenc = 'PLU - cobros pendientes'[Fecha Vencimiento]
+VAR Hoy = TODAY()
+RETURN
+    SWITCH(
+        TRUE(),
+        FechaVenc < Hoy, "Atrasado",
+        FechaVenc >= Hoy && FechaVenc <= Hoy + 7, "Próximos 7 días",
+        "Posterior"
+    )
+```
+
+### 5. Consolidated Net Cash Flow (The Core Ledger Link)
+The atomic engine of the forecasting model. It aggregates uncollected revenues (Cobros) and subtracts pending expenses (Pagos) and corporate payrolls (Nóminas) across a unified relational matrix, driving every single visual layout in the system.
+
+```dax
+Flujo Neto = [Total cobros pendientes] - [Total pagos pendientes] - SUM('Nóminas y SS'[IMPORTE])
+```
+
+---
