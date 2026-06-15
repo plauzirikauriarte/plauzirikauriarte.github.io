@@ -42,7 +42,7 @@ The project implements a classic BI architectural workflow: **Extract ➔ Transf
 
 ### Liquidity Forecast & Financial Core
 
-<img src="/projects/cashforecastassets/dashboard-main.png" 
+<img src="/projects/cash-forecast/Cash forecast PLU - 1.png" 
      alt="Cash Forecast Main Dashboard" 
      width="900">
 
@@ -52,7 +52,7 @@ The central core links dynamic bank tracking with interactive timeline slices. I
 
 ### Interactive Filtering & Ageing Analysis
 
-<img src="/projects/cashforecastassets/dashboard-filtered.png" 
+<img src="/projects/cashforecastassets/Cash forecast PLU - 2.png" 
      alt="Filtered Client Analysis" 
      width="900">
 
