@@ -54,7 +54,7 @@ The central core links dynamic bank tracking with interactive timeline slices. I
 
 <img src="/projects/cash-forecast/Cash forecast PLU - 2.png" 
      alt="Filtered Client Analysis" 
-     width="700">
+     width="900">
 
 The dashboard includes tailored slicers and option buttons connected directly to the core data model. The option button allows the user to analyze the cash flows including or excluding group companies (in this case, "Cliente 27" and "Proveedor 78"). Regarding the week slicer, when a week is selected, the Top 10 Customers and Suppliers chart bellow change according to that selection.
 
@@ -63,7 +63,7 @@ The dashboard includes tailored slicers and option buttons connected directly to
 
 <img src="/projects/cash-forecast/Cash forecast PLU - 3.png" 
      alt="Filtered Client Analysis" 
-     width="700">
+     width="900">
 
 ---
 
@@ -71,7 +71,7 @@ The dashboard includes tailored slicers and option buttons connected directly to
 
 <img src="/projects/cash-forecast/Cash forecast PLU - 4.png" 
      alt="Filtered Client Analysis" 
-     width="700">
+     width="900">
 
 This filters inmediately make changes in the main table on the left by just showing the expected payments or collections in the following 30 days. When this charts are filtered, the forecast table on the left stops showing both the expected initial and final balance for each day and the up/down arrow mark.
 
