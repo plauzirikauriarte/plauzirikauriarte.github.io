@@ -56,7 +56,7 @@ The central core links dynamic bank tracking with interactive timeline slices. I
      alt="Filtered Client Analysis" 
      width="900">
 
-The dashboard includes tailored slicers connected directly to the core data model. When an individual client or supplier is selected, the system isolating their upcoming maturities instantly.
+The dashboard includes tailored slicers and option buttons connected directly to the core data model. The option button allows the user to analyze the cash flows including or excluding group companies (in this case, "Cliente 27" and "Proveedor 78"). Regarding the week slicer, when a week is selected, the Top 10 Customers and Suppliers chart bellow change according to that selection.
 
 ---
 
