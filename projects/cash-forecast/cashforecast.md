@@ -52,7 +52,7 @@ The central core links dynamic bank tracking with interactive timeline slices. I
 
 ### Interactive Filtering & Ageing Analysis
 
-<img src="/projects/cashforecastassets/Cash forecast PLU - 2.png" 
+<img src="/projects/cash-forecast/Cash forecast PLU - 2.png" 
      alt="Filtered Client Analysis" 
      width="900">
 
