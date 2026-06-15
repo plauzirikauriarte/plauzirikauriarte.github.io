@@ -17,8 +17,8 @@ title: Finance & Business Intelligence Portfolio
         <p class="subtitle">Finance & Business Intelligence Professional</p>
         <p>
             Transforming complex financial data into actionable business insights.
-            Specialized in Business Intelligence, data analytics and financial
-            reporting using modern tools like Power BI, SQL and Python.
+            Bridging the gap between corporate finance and advanced analytics
+            using modern tools like Power BI, SQL and Python.
         </p>
     </div>
 
