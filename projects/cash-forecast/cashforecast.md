@@ -8,7 +8,7 @@ permalink: /projects/cash-forecast/
 
 A comprehensive cash forecasting project for financial planning and analysis.
 
-## Overview
+## Project Overview
 
 This project provides tools and analytics for forecasting cash flows and managing financial projections.
 
