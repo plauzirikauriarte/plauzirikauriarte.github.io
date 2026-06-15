@@ -20,6 +20,8 @@ A robust, corporate-grade cash forecasting system designed to bridge the gap bet
 
 **Key Focus:** Ensuring data integrity through financial logic, automated ETL pipelines, and user-centric dashboard design.
 
+> 🔒 **Confidentiality Notice:** This dashboard is built upon a **real-world corporate project**. To comply with data privacy and NDA standards, all sensitive company names, client/supplier details, financial balances, and transaction values have been fully anonymized and synthetically scaled. The original relational logic and analytical structure remain completely intact.
+
 ---
 
 ## Data Model & Architecture
