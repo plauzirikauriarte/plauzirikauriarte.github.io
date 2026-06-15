@@ -9,7 +9,7 @@ title: Finance & Business Intelligence Portfolio
 
     <img src="/portfolioassets/image_profile.jpg"
          alt="Patrik Lauzirika"
-         width="180"
+         width="220"
          style="border-radius:50%; border:4px solid #e5e7eb;">
 
     <div>
