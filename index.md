@@ -62,7 +62,7 @@ title: Finance & Business Intelligence Portfolio
                 <li>Financial Modeling</li>
                 <li>Budget Analysis</li>
                 <li>Forecasting</li>
-                <li>Reporting</li>
+                <li>Reporting </li>
             </ul>
         </div>
         <div class="skill-box">
