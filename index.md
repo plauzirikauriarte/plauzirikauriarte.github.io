@@ -20,12 +20,8 @@ title: Finance & Business Intelligence Portfolio
             Bridging the gap between corporate finance and advanced analytics
             using modern tools like Power BI, SQL and Python.
         </p>
-        
-        <p>
-        <img src="https://visitor-badge.laobi.icu/badge?page_id=plauzirikauriarte.github.io"
-             alt="Visitor Counter">
-        </p>
-        
+       
+              
     </div>
 
 </div>
