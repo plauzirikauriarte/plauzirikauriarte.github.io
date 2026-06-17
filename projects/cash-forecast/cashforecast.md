@@ -38,7 +38,7 @@ The project implements a classic BI architectural workflow: **Extract ➔ Transf
 
 ### Data Model Structure
 
-<img src="/projects/cash-forecast/Cash forecast PLU - data model.png" 
+<img src="/projects/cash-forecast/Cash forecast PLU - data model edit.png" 
      alt="Filtered Client Analysis" 
      width="900">
 
